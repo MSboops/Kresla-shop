@@ -10,7 +10,6 @@ import {
   Phone,
 } from 'lucide-react';
 
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
@@ -121,6 +120,7 @@ const Header = () => {
             </Link>
           </nav>
 
+          {/* Right buttons */}
           <div className="hidden lg:flex items-center space-x-4">
             <button className="relative p-2 text-gray-700 hover:text-indigo-600 transition-colors rounded-lg hover:bg-indigo-50">
               <Heart className="w-5 h-5" />
@@ -144,7 +144,6 @@ const Header = () => {
           </button>
         </div>
       </div>
-
 
       {isMenuOpen && (
         <div className="lg:hidden bg-white border-t border-gray-100 shadow-lg">

@@ -1,16 +1,16 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Catalog from './pages/Catalog';
-import About from './pages/About';
-import Mission from './pages/Mission';
-import Projects from './pages/Projects';
-import Advantages from './pages/Advantages';
-import Testimonials from './pages/Testimonials';
-import Contacts from './pages/Contacts';
-import NotFound from './pages/NotFound';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import Home from './pages/Home.jsx';
+import Catalog from './pages/Catalog.jsx';
+import About from './pages/About.jsx';
+import Mission from './pages/Mission.jsx';
+import Projects from './pages/Projects.jsx';
+import Advantages from './pages/Advantages.jsx';
+import Testimonials from './pages/Testimonials.jsx';
+import Contacts from './pages/Contacts.jsx';
+import NotFound from './pages/NotFound.jsx';
 
 const App = () => {
   return (
@@ -27,7 +27,6 @@ const App = () => {
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/advantages" element={<Advantages />} />
         </Routes>
       </main>
       <Footer />
