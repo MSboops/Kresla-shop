@@ -15,8 +15,8 @@ const Catalog = () => {
   }))
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-6">Каталог  кресел</h1>
+    <div className="container mx-auto px-4 py-12"> 
+      <h1 className="text-3xl font-bold mb-6">Каталог кресел</h1>
       <div className="grid md:grid-cols-3 gap-6">
         {products.map(p=> <ProductCard key={p.id} product={p} />)}
       </div>
